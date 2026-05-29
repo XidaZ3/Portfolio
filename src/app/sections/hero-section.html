@@ -12,10 +12,14 @@
     </div>
   </div>
 
-  <aside class="hero__proof" aria-label="Profile highlights">
-    <p>What I can cover</p>
-    @for (item of content().proof; track $index) {
-      <span>{{ item }}</span>
-    }
+  <aside class="hero__media" aria-label="Profile highlights">
+    <img src="/xida-chen-photo.jpeg" alt="Xida Chen" />
+
+    <div class="hero__proof">
+      <p>What I can cover</p>
+      @for (item of content().proof; track $index) {
+        <span>{{ item }}</span>
+      }
+    </div>
   </aside>
 </section>

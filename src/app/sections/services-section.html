@@ -6,8 +6,8 @@
   </div>
 
   <div class="service-grid">
-    @for (service of services(); track service.title) {
-      <article class="service-card">
+    @for (service of services(); track service.title; let index = $index) {
+      <article class="service-card" [class.service-card--featured]="index < 2">
         <h3>{{ service.title }}</h3>
         <p>{{ service.description }}</p>
       </article>

@@ -10,7 +10,7 @@
       <article class="skill-group">
         <h3>{{ group.title }}</h3>
         <div class="skill-tags">
-          @for (skill of group.skills; track skill) {
+          @for (skill of group.skills; track $index) {
             <span>{{ skill }}</span>
           }
         </div>

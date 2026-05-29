@@ -98,11 +98,16 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       { label: 'Contact', href: '#contact' },
     ],
     hero: {
-      eyebrow: 'Frontend product development',
-      title: 'I build practical Angular and Vue products that teams can ship and maintain.',
+      eyebrow: 'Frontend products and Rails-backed APIs',
+      title: 'I build practical web products from interface to API.',
       summary:
-        'I help product teams turn complex workflows into clear, reliable web applications with strong TypeScript, API integration, and frontend architecture.',
-      proof: ['Based in Italy', 'Professional English', 'Angular, Vue, TypeScript, RxJS'],
+        'I help product teams turn complex workflows into clear Angular and Vue applications, with Rails API development when the product needs backend delivery too.',
+      proof: [
+        'Angular, Vue, TypeScript',
+        'Ruby on Rails APIs',
+        'Workflow-heavy products',
+        'Based in Italy, working in English',
+      ],
       primaryCta: 'Start a project inquiry',
       secondaryCta: {
         label: 'Download CV',
@@ -111,12 +116,17 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
     },
     servicesTitle: 'Development services',
     servicesSummary:
-      'Focused support for teams that need frontend delivery, product clarity, and maintainable web applications.',
+      'Focused support for teams that need frontend delivery, Rails API capability, product clarity, and maintainable web applications.',
     services: [
       {
         title: 'Frontend product development',
         description:
-          'Angular and Vue implementation for dashboards, workflow tools, customer portals, and internal products.',
+          'Angular and Vue implementation for dashboards, workflow tools, customer portals, and internal products that need to be reliable after launch.',
+      },
+      {
+        title: 'Rails API development',
+        description:
+          'Ruby on Rails API work for product teams that need backend endpoints, data flow, and frontend integration delivered together.',
       },
       {
         title: 'TypeScript architecture',
@@ -126,7 +136,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       {
         title: 'API-driven interfaces',
         description:
-          'Reliable integration with GraphQL and REST services, including loading states, error paths, and data-heavy screens.',
+          'Reliable integration with GraphQL, REST, and Rails services, including loading states, error paths, and data-heavy screens.',
       },
       {
         title: 'Frontend rescue and polish',
@@ -171,20 +181,22 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
     ],
     skillsTitle: 'Tools and strengths',
     skillsSummary:
-      'The stack is centered on modern frontend delivery, with enough backend fluency to collaborate well across product teams.',
+      'The stack is centered on modern frontend delivery with Rails API capability for teams that need one developer to connect product flow end to end.',
     skillGroups: [
       {
         title: 'Frontend',
         skills: ['Angular', 'Vue', 'TypeScript', 'RxJS', 'Three.js', 'TailwindCSS'],
       },
       {
-        title: 'APIs and delivery',
-        skills: ['GraphQL', 'REST', 'Git', 'Agile methodologies', 'Pipeline monitoring'],
+        title: 'Backend and APIs',
+        skills: ['Ruby on Rails', 'Rails APIs', 'GraphQL', 'REST', 'Data modeling'],
       },
       {
-        title: 'Collaboration',
+        title: 'Delivery',
         skills: [
-          'Ruby on Rails collaboration',
+          'Git',
+          'Agile methodologies',
+          'Pipeline monitoring',
           'Predictive thinking',
           'Italian native',
           'Professional English',
@@ -197,18 +209,13 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
         title: 'Software Engineer at Moku',
         meta: 'June 2022 to today',
         description:
-          'Frontend and full-stack delivery across workflow platforms, management tools, and interactive web experiences.',
+          'Frontend, Rails API, and full-stack delivery across workflow platforms, management tools, and interactive web experiences.',
       },
       {
         title: 'University of Padova',
         meta: 'Computer Science, 2019 to 2022',
         description:
           'Bachelor degree in Computer Science. Top 3% of graduating class and winner of the “Mille e una lode” scholarship.',
-      },
-      {
-        title: 'Stripe Certified Associate Developer',
-        meta: 'Certification',
-        description: 'Validated Stripe development knowledge for payment-oriented product work.',
       },
     ],
     contact: {
@@ -222,6 +229,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       typeOptions: [
         'Angular product',
         'Vue product',
+        'Rails API / full-stack product',
         'Frontend rescue',
         'API-driven UI',
         '3D web UI',
@@ -233,7 +241,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       linkedinLabel: 'LinkedIn',
     },
     footer: {
-      summary: 'Frontend product development for teams that need practical delivery.',
+      summary: 'Frontend and Rails API development for teams that need practical delivery.',
       location: 'Sacile, Pordenone, Italy',
     },
   },
@@ -247,11 +255,16 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       { label: 'Contatti', href: '#contact' },
     ],
     hero: {
-      eyebrow: 'Sviluppo frontend di prodotto',
-      title: 'Realizzo prodotti Angular e Vue concreti, consegnabili e mantenibili.',
+      eyebrow: 'Prodotti frontend e API Rails',
+      title: 'Realizzo prodotti web pratici dall’interfaccia all’API.',
       summary:
-        'Aiuto team di prodotto a trasformare workflow complessi in applicazioni web chiare e affidabili, con TypeScript, integrazione API e architettura frontend solida.',
-      proof: ['Base in Italia', 'Inglese professionale', 'Angular, Vue, TypeScript, RxJS'],
+        'Aiuto team di prodotto a trasformare workflow complessi in applicazioni Angular e Vue chiare, con sviluppo API Rails quando serve coprire anche il backend.',
+      proof: [
+        'Angular, Vue, TypeScript',
+        'API Ruby on Rails',
+        'Prodotti con workflow complessi',
+        'Base in Italia, lavoro in inglese',
+      ],
       primaryCta: 'Avvia una richiesta',
       secondaryCta: {
         label: 'Scarica CV',
@@ -260,12 +273,17 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
     },
     servicesTitle: 'Servizi di sviluppo',
     servicesSummary:
-      'Supporto mirato per team che hanno bisogno di delivery frontend, chiarezza di prodotto e applicazioni web mantenibili.',
+      'Supporto mirato per team che hanno bisogno di delivery frontend, API Rails, chiarezza di prodotto e applicazioni web mantenibili.',
     services: [
       {
         title: 'Sviluppo frontend di prodotto',
         description:
-          'Implementazione Angular e Vue per dashboard, strumenti operativi, portali cliente e prodotti interni.',
+          'Implementazione Angular e Vue per dashboard, strumenti operativi, portali cliente e prodotti interni che devono restare affidabili dopo il rilascio.',
+      },
+      {
+        title: 'Sviluppo API Rails',
+        description:
+          'Sviluppo Ruby on Rails per team che hanno bisogno di endpoint backend, flussi dati e integrazione frontend consegnati insieme.',
       },
       {
         title: 'Architettura TypeScript',
@@ -275,7 +293,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       {
         title: 'Interfacce basate su API',
         description:
-          'Integrazione affidabile con servizi GraphQL e REST, inclusi stati di caricamento, casi di errore e schermate data-heavy.',
+          'Integrazione affidabile con servizi GraphQL, REST e Rails, inclusi stati di caricamento, casi di errore e schermate data-heavy.',
       },
       {
         title: 'Refactoring e rifinitura frontend',
@@ -319,20 +337,22 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
     ],
     skillsTitle: 'Strumenti e punti di forza',
     skillsSummary:
-      'Lo stack è centrato sulla delivery frontend moderna, con competenze backend sufficienti per collaborare bene con tutto il team prodotto.',
+      'Lo stack è centrato sulla delivery frontend moderna, con capacità API Rails per team che cercano continuità tra prodotto, interfaccia e backend.',
     skillGroups: [
       {
         title: 'Frontend',
         skills: ['Angular', 'Vue', 'TypeScript', 'RxJS', 'Three.js', 'TailwindCSS'],
       },
       {
-        title: 'API e delivery',
-        skills: ['GraphQL', 'REST', 'Git', 'Metodologie Agile', 'Monitoraggio pipeline'],
+        title: 'Backend e API',
+        skills: ['Ruby on Rails', 'API Rails', 'GraphQL', 'REST', 'Data modeling'],
       },
       {
-        title: 'Collaborazione',
+        title: 'Delivery',
         skills: [
-          'Collaborazione Ruby on Rails',
+          'Git',
+          'Metodologie Agile',
+          'Monitoraggio pipeline',
           'Predictive thinking',
           'Italiano madrelingua',
           'Inglese professionale',
@@ -345,19 +365,13 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
         title: 'Software Engineer presso Moku',
         meta: 'Giugno 2022 a oggi',
         description:
-          'Delivery frontend e full-stack su piattaforme workflow, strumenti gestionali ed esperienze web interattive.',
+          'Delivery frontend, API Rails e full-stack su piattaforme workflow, strumenti gestionali ed esperienze web interattive.',
       },
       {
         title: 'Università di Padova',
         meta: 'Informatica, 2019-2022',
         description:
           'Laurea triennale in Informatica. Top 3% della classe di laureati e vincitore della borsa “Mille e una lode”.',
-      },
-      {
-        title: 'Stripe Certified Associate Developer',
-        meta: 'Certificazione',
-        description:
-          'Conoscenza certificata dello sviluppo Stripe per prodotti con componenti di pagamento.',
       },
     ],
     contact: {
@@ -371,6 +385,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       typeOptions: [
         'Prodotto Angular',
         'Prodotto Vue',
+        'API Rails / prodotto full-stack',
         'Recupero frontend',
         'UI basata su API',
         'UI web 3D',
@@ -382,7 +397,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       linkedinLabel: 'LinkedIn',
     },
     footer: {
-      summary: 'Sviluppo frontend di prodotto per team che hanno bisogno di delivery concreta.',
+      summary: 'Sviluppo frontend e API Rails per team che hanno bisogno di delivery concreta.',
       location: 'Sacile, Pordenone, Italia',
     },
   },

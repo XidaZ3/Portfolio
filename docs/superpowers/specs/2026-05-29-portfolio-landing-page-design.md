@@ -9,7 +9,7 @@ The content direction is based on the current CV:
 - Frontend and full-stack software engineering experience at Moku.
 - Angular, Vue, TypeScript, RxJS, GraphQL, REST, Three.js, TailwindCSS, Ruby on Rails collaboration, Git, and agile delivery.
 - Work on a dental order lifecycle platform, a vehicle practice management application, and a 3D web configurator.
-- University of Padova computer science degree and Stripe Certified Associate Developer certification.
+- University of Padova computer science degree.
 - Location in Sacile, Pordenone, Italy, with professional English and native Italian.
 
 ## Goals
@@ -54,7 +54,6 @@ Primary sections:
 5. Credentials
    - Current software engineering role.
    - University of Padova degree.
-   - Stripe Certified Associate Developer.
 6. Contact
    - Form-style fields that generate a `mailto:` link.
    - Plain email and LinkedIn as visible fallbacks.

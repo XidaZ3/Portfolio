@@ -1,5 +1,5 @@
 .site-shell {
-  width: min(1180px, calc(100% - 2rem));
+  width: min(1360px, calc(100% - clamp(1rem, 4vw, 4rem)));
   margin: 0 auto;
 }
 

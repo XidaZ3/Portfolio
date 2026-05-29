@@ -36,7 +36,7 @@
         name="projectType"
       >
         <option value=""></option>
-        @for (option of content().typeOptions; track option) {
+        @for (option of content().typeOptions; track $index) {
           <option [value]="option">{{ option }}</option>
         }
       </select>

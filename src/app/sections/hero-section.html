@@ -13,7 +13,8 @@
   </div>
 
   <aside class="hero__proof" aria-label="Profile highlights">
-    @for (item of content().proof; track item) {
+    <p>What I can cover</p>
+    @for (item of content().proof; track $index) {
       <span>{{ item }}</span>
     }
   </aside>

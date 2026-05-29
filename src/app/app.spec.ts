@@ -20,7 +20,7 @@ describe('App', () => {
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'I build practical Angular and Vue products',
+      'I build practical web products from interface to API',
     );
   });
 
@@ -34,6 +34,8 @@ describe('App', () => {
     await fixture.whenStable();
 
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Realizzo prodotti Angular e Vue');
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Realizzo prodotti web pratici dall’interfaccia all’API',
+    );
   });
 });

@@ -378,7 +378,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       eyebrow: 'Richiesta progetto',
       title: 'Raccontami cosa devi costruire.',
       summary:
-        'Condividi prodotto, tempistiche e tipo di supporto richiesto. Ti risponderò con prossimi passi concreti.',
+        'Condividi prodotto, tempistiche e tipo di supporto richiesto. Da lì capiamo insieme come procedere.',
       nameLabel: 'Nome',
       emailLabel: 'Email',
       typeLabel: 'Tipo di progetto',

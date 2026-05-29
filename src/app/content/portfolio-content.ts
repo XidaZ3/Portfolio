@@ -222,7 +222,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       eyebrow: 'Project inquiry',
       title: 'Tell me what you need to build.',
       summary:
-        'Use the fields below to prepare an email. The site keeps things simple and opens your mail client with the details filled in.',
+        'Share the product, timeline, and where you need support. I will reply with practical next steps.',
       nameLabel: 'Name',
       emailLabel: 'Email',
       typeLabel: 'Project type',
@@ -378,7 +378,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       eyebrow: 'Richiesta progetto',
       title: 'Raccontami cosa devi costruire.',
       summary:
-        'Compila i campi per preparare un’email. Il sito resta statico e apre il tuo client email con i dettagli già inseriti.',
+        'Condividi prodotto, tempistiche e tipo di supporto richiesto. Ti risponderò con prossimi passi concreti.',
       nameLabel: 'Nome',
       emailLabel: 'Email',
       typeLabel: 'Tipo di progetto',

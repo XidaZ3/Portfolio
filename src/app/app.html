@@ -1,5 +1,5 @@
-<div class="site-shell">
-  <header class="site-header">
+<header class="site-header">
+  <div class="site-header__inner">
     <a class="brand" href="#top" aria-label="Xida Chen home">
       <span>Xida Chen</span>
       <small>Frontend Engineer</small>
@@ -14,8 +14,10 @@
     <button class="language-toggle" type="button" (click)="toggleLanguage()">
       {{ content().alternateLanguageName }}
     </button>
-  </header>
+  </div>
+</header>
 
+<div class="site-shell">
   <main>
     <app-hero-section [content]="content().hero" />
     <app-services-section

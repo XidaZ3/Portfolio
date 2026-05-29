@@ -26,12 +26,16 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   margin: 0;
   background:
-    linear-gradient(180deg, rgb(15 118 110 / 0.08), transparent 520px), var(--color-background);
+    linear-gradient(135deg, rgb(15 118 110 / 0.13) 0%, rgb(249 250 251 / 0) 34%),
+    linear-gradient(215deg, rgb(245 158 11 / 0.1) 0%, rgb(249 250 251 / 0) 32%),
+    linear-gradient(180deg, rgb(15 118 110 / 0.08), transparent 560px), var(--color-background);
+  overflow-x: clip;
 }
 
 button,

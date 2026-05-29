@@ -1,0 +1,20 @@
+<section class="hero" id="top">
+  <div class="hero__content">
+    <p class="eyebrow">{{ content().eyebrow }}</p>
+    <h1>{{ content().title }}</h1>
+    <p class="hero__summary">{{ content().summary }}</p>
+
+    <div class="hero__actions">
+      <a class="button button--primary" href="#contact">{{ content().primaryCta }}</a>
+      <a class="button button--secondary" [href]="content().secondaryCta.href" download>
+        {{ content().secondaryCta.label }}
+      </a>
+    </div>
+  </div>
+
+  <aside class="hero__proof" aria-label="Profile highlights">
+    @for (item of content().proof; track item) {
+      <span>{{ item }}</span>
+    }
+  </aside>
+</section>

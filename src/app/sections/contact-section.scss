@@ -1,0 +1,88 @@
+:host {
+  display: block;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: start;
+  padding: clamp(2rem, 5vw, 3rem);
+  border-radius: var(--radius);
+  background: var(--color-ink);
+  color: white;
+}
+
+.contact__intro h2 {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 4.6rem);
+  line-height: 1;
+}
+
+.contact__intro p:not(.eyebrow) {
+  color: rgb(255 255 255 / 0.72);
+  line-height: 1.6;
+}
+
+.contact-form {
+  display: grid;
+  gap: 0.9rem;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+}
+
+label span {
+  color: rgb(255 255 255 / 0.74);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid rgb(255 255 255 / 0.18);
+  border-radius: calc(var(--radius) - 4px);
+  background: rgb(255 255 255 / 0.08);
+  color: white;
+  font: inherit;
+  padding: 0.85rem 0.95rem;
+}
+
+option {
+  color: var(--color-ink);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.contact-form .button {
+  justify-self: start;
+  margin-top: 0.35rem;
+}
+
+.contact__fallback {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.1rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgb(255 255 255 / 0.16);
+  color: rgb(255 255 255 / 0.72);
+  overflow-wrap: anywhere;
+}
+
+.contact__fallback a {
+  color: white;
+  font-weight: 800;
+}
+
+@media (max-width: 800px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,22 @@
+:host {
+  display: block;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem 0 3rem;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+p {
+  margin: 0;
+}
+
+@media (max-width: 620px) {
+  footer {
+    flex-direction: column;
+  }
+}

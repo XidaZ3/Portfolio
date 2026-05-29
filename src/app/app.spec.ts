@@ -14,10 +14,26 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', async () => {
+  it('should render the English landing page by default', async () => {
     const fixture = TestBed.createComponent(App);
+    fixture.detectChanges();
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, portfolio');
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'I build practical Angular and Vue products',
+    );
+  });
+
+  it('should switch to Italian content', async () => {
+    const fixture = TestBed.createComponent(App);
+    fixture.detectChanges();
+
+    const button = fixture.nativeElement.querySelector('.language-toggle') as HTMLButtonElement;
+    button.click();
+    fixture.detectChanges();
+    await fixture.whenStable();
+
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('Realizzo prodotti Angular e Vue');
   });
 });

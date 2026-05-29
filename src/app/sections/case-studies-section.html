@@ -1,0 +1,32 @@
+<section class="section" id="work">
+  <div class="section__intro">
+    <p class="eyebrow">Selected work</p>
+    <h2>{{ title() }}</h2>
+    <p>{{ summary() }}</p>
+  </div>
+
+  <div class="case-list">
+    @for (caseStudy of cases(); track caseStudy.title) {
+      <article class="case-card">
+        <div>
+          <p class="case-card__label">{{ caseStudy.label }}</p>
+          <h3>{{ caseStudy.title }}</h3>
+        </div>
+        <dl>
+          <div>
+            <dt>Context</dt>
+            <dd>{{ caseStudy.challenge }}</dd>
+          </div>
+          <div>
+            <dt>Contribution</dt>
+            <dd>{{ caseStudy.contribution }}</dd>
+          </div>
+          <div>
+            <dt>Value</dt>
+            <dd>{{ caseStudy.outcome }}</dd>
+          </div>
+        </dl>
+      </article>
+    }
+  </div>
+</section>

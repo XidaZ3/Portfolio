@@ -1,0 +1,20 @@
+<section class="section section--split" id="skills">
+  <div class="section__intro section__intro--sticky">
+    <p class="eyebrow">Stack</p>
+    <h2>{{ title() }}</h2>
+    <p>{{ summary() }}</p>
+  </div>
+
+  <div class="skill-groups">
+    @for (group of groups(); track group.title) {
+      <article class="skill-group">
+        <h3>{{ group.title }}</h3>
+        <div class="skill-tags">
+          @for (skill of group.skills; track skill) {
+            <span>{{ skill }}</span>
+          }
+        </div>
+      </article>
+    }
+  </div>
+</section>

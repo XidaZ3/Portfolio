@@ -1,0 +1,55 @@
+:host {
+  display: block;
+}
+
+.case-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.case-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.8fr);
+  gap: 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+
+.case-card__label {
+  margin: 0 0 0.8rem;
+  color: var(--color-accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.case-card h3 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+}
+
+dl {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+}
+
+dt {
+  color: var(--color-ink);
+  font-weight: 800;
+}
+
+dd {
+  margin: 0.25rem 0 0;
+  color: var(--color-muted);
+  line-height: 1.55;
+}
+
+@media (max-width: 760px) {
+  .case-card {
+    grid-template-columns: 1fr;
+  }
+}

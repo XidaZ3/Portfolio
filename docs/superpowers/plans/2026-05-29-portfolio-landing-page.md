@@ -29,6 +29,7 @@
 ## Task 1: Scaffold Angular App
 
 **Files:**
+
 - Create: Angular app files in repository root
 - Preserve: `docs/superpowers/specs/2026-05-29-portfolio-landing-page-design.md`
 - Preserve: `docs/superpowers/plans/2026-05-29-portfolio-landing-page.md`
@@ -75,6 +76,7 @@ git commit -m "chore: scaffold angular portfolio app"
 ## Task 2: Add Typed Bilingual Content And Assets
 
 **Files:**
+
 - Create: `src/app/content/portfolio-content.ts`
 - Create: `public/xida-chen-cv-it.pdf`
 
@@ -114,6 +116,7 @@ git commit -m "feat: add bilingual portfolio content"
 ## Task 3: Build Page Shell And Sections
 
 **Files:**
+
 - Modify: `src/app/app.component.ts`
 - Modify: `src/app/app.component.html`
 - Modify: `src/app/app.component.scss`
@@ -169,6 +172,7 @@ git commit -m "feat: build portfolio landing page sections"
 ## Task 4: Style Responsive Landing Page
 
 **Files:**
+
 - Modify: `src/styles.scss`
 - Modify: `src/app/app.component.scss`
 - Modify: component SCSS files under `src/app/sections/`
@@ -211,6 +215,7 @@ git commit -m "style: polish responsive portfolio layout"
 ## Task 5: Final Verification And Local Run
 
 **Files:**
+
 - Modify only if verification reveals a defect.
 
 - [ ] **Step 1: Run production build**

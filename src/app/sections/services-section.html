@@ -1,0 +1,16 @@
+<section class="section" id="services">
+  <div class="section__intro">
+    <p class="eyebrow">Services</p>
+    <h2>{{ title() }}</h2>
+    <p>{{ summary() }}</p>
+  </div>
+
+  <div class="service-grid">
+    @for (service of services(); track service.title) {
+      <article class="service-card">
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+      </article>
+    }
+  </div>
+</section>

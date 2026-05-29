@@ -15,6 +15,7 @@ export interface HeroContent {
   title: string;
   summary: string;
   proof: string[];
+  bestFit: string[];
   primaryCta: string;
   secondaryCta: CtaLink;
 }
@@ -98,16 +99,17 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       { label: 'Contact', href: '#contact' },
     ],
     hero: {
-      eyebrow: 'Frontend products and Rails-backed APIs',
-      title: 'I build practical web products from interface to API.',
+      eyebrow: 'Full-stack web products',
+      title: 'I build practical web products from UI to Rails API.',
       summary:
-        'I help product teams turn complex workflows into clear Angular and Vue applications, with Rails API development when the product needs backend delivery too.',
+        'I help product teams ship Angular and Vue interfaces with Rails APIs behind them, especially for workflow-heavy products that need clear UX and reliable backend delivery.',
       proof: [
-        'Angular, Vue, TypeScript',
+        'Full-stack product delivery',
         'Ruby on Rails APIs',
+        'Angular, Vue, TypeScript',
         'Workflow-heavy products',
-        'Based in Italy, working in English',
       ],
+      bestFit: ['SaaS dashboards', 'Internal tools', 'Workflow platforms', 'API-backed web apps'],
       primaryCta: 'Start a project inquiry',
       secondaryCta: {
         label: 'Download CV',
@@ -116,8 +118,13 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
     },
     servicesTitle: 'Development services',
     servicesSummary:
-      'Focused support for teams that need frontend delivery, Rails API capability, product clarity, and maintainable web applications.',
+      'Focused support for teams that need full-stack delivery, Rails API capability, product clarity, and maintainable web applications.',
     services: [
+      {
+        title: 'Full-stack product development',
+        description:
+          'End-to-end web product delivery across Angular or Vue interfaces, Rails APIs, data flow, and release-ready implementation.',
+      },
       {
         title: 'Frontend product development',
         description:
@@ -129,17 +136,12 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
           'Ruby on Rails API work for product teams that need backend endpoints, data flow, and frontend integration delivered together.',
       },
       {
-        title: 'TypeScript architecture',
-        description:
-          'Component structure, state flow, RxJS usage, and maintainable patterns that help features keep moving.',
-      },
-      {
         title: 'API-driven interfaces',
         description:
           'Reliable integration with GraphQL, REST, and Rails services, including loading states, error paths, and data-heavy screens.',
       },
       {
-        title: 'Frontend rescue and polish',
+        title: 'Product rescue and maintainability',
         description:
           'Refactoring, performance improvements, UI cleanup, and delivery support for products that need momentum again.',
       },
@@ -154,7 +156,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
         challenge:
           'A multinational dental-sector organization needed a platform to support the order journey from initial design through final shipment.',
         contribution:
-          'Contributed to frontend delivery across a complete product workflow, helping translate operational steps into usable web interfaces.',
+          'Contributed to product delivery across a complete workflow, helping translate operational steps into usable web interfaces and connected application behavior.',
         outcome:
           'Clearer order flow, stronger product structure, and a web application that supports a demanding multi-step process.',
       },
@@ -181,18 +183,18 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
     ],
     skillsTitle: 'Tools and strengths',
     skillsSummary:
-      'The stack is centered on modern frontend delivery with Rails API capability for teams that need one developer to connect product flow end to end.',
+      'The stack is built around full-stack product delivery, with a strong frontend edge and enough backend depth to own the product path end to end.',
     skillGroups: [
       {
         title: 'Frontend',
         skills: ['Angular', 'Vue', 'TypeScript', 'RxJS', 'Three.js', 'TailwindCSS'],
       },
       {
-        title: 'Backend and APIs',
+        title: 'Backend',
         skills: ['Ruby on Rails', 'Rails APIs', 'GraphQL', 'REST', 'Data modeling'],
       },
       {
-        title: 'Delivery',
+        title: 'Product delivery',
         skills: [
           'Git',
           'Agile methodologies',
@@ -209,7 +211,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
         title: 'Software Engineer at Moku',
         meta: 'June 2022 to today',
         description:
-          'Frontend, Rails API, and full-stack delivery across workflow platforms, management tools, and interactive web experiences.',
+          'Full-stack delivery across workflow platforms, management tools, Rails-backed APIs, and interactive web experiences.',
       },
       {
         title: 'University of Padova',
@@ -227,10 +229,10 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       emailLabel: 'Email',
       typeLabel: 'Project type',
       typeOptions: [
-        'Angular product',
-        'Vue product',
-        'Rails API / full-stack product',
-        'Frontend rescue',
+        'Full-stack product',
+        'Rails API',
+        'Angular/Vue frontend',
+        'Product rescue',
         'API-driven UI',
         '3D web UI',
       ],
@@ -241,7 +243,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       linkedinLabel: 'LinkedIn',
     },
     footer: {
-      summary: 'Frontend and Rails API development for teams that need practical delivery.',
+      summary: 'Full-stack product development for teams that need practical delivery.',
       location: 'Sacile, Pordenone, Italy',
     },
   },
@@ -255,16 +257,17 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       { label: 'Contatti', href: '#contact' },
     ],
     hero: {
-      eyebrow: 'Prodotti frontend e API Rails',
-      title: 'Realizzo prodotti web pratici dall’interfaccia all’API.',
+      eyebrow: 'Prodotti web full-stack',
+      title: 'Realizzo prodotti web pratici dalla UI all’API Rails.',
       summary:
-        'Aiuto team di prodotto a trasformare workflow complessi in applicazioni Angular e Vue chiare, con sviluppo API Rails quando serve coprire anche il backend.',
+        'Aiuto team di prodotto a consegnare interfacce Angular e Vue con API Rails solide, soprattutto quando il prodotto ha workflow complessi e deve funzionare bene end to end.',
       proof: [
-        'Angular, Vue, TypeScript',
+        'Delivery full-stack di prodotto',
         'API Ruby on Rails',
+        'Angular, Vue, TypeScript',
         'Prodotti con workflow complessi',
-        'Base in Italia, lavoro in inglese',
       ],
+      bestFit: ['Dashboard SaaS', 'Strumenti interni', 'Piattaforme workflow', 'Web app con API'],
       primaryCta: 'Avvia una richiesta',
       secondaryCta: {
         label: 'Scarica CV',
@@ -273,8 +276,13 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
     },
     servicesTitle: 'Servizi di sviluppo',
     servicesSummary:
-      'Supporto mirato per team che hanno bisogno di delivery frontend, API Rails, chiarezza di prodotto e applicazioni web mantenibili.',
+      'Supporto mirato per team che hanno bisogno di delivery full-stack, API Rails, chiarezza di prodotto e applicazioni web mantenibili.',
     services: [
+      {
+        title: 'Sviluppo prodotto full-stack',
+        description:
+          'Delivery end-to-end di prodotti web con interfacce Angular o Vue, API Rails, flussi dati e implementazione pronta al rilascio.',
+      },
       {
         title: 'Sviluppo frontend di prodotto',
         description:
@@ -286,17 +294,12 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
           'Sviluppo Ruby on Rails per team che hanno bisogno di endpoint backend, flussi dati e integrazione frontend consegnati insieme.',
       },
       {
-        title: 'Architettura TypeScript',
-        description:
-          'Struttura dei componenti, flusso dello stato, uso di RxJS e pattern mantenibili per far avanzare le feature.',
-      },
-      {
         title: 'Interfacce basate su API',
         description:
           'Integrazione affidabile con servizi GraphQL, REST e Rails, inclusi stati di caricamento, casi di errore e schermate data-heavy.',
       },
       {
-        title: 'Refactoring e rifinitura frontend',
+        title: 'Recupero prodotto e mantenibilità',
         description:
           'Miglioramenti di mantenibilità, performance, pulizia UI e supporto alla delivery per prodotti che devono riprendere ritmo.',
       },
@@ -311,7 +314,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
         challenge:
           'Una multinazionale del settore dentale aveva bisogno di una piattaforma per seguire l’ordine dalla progettazione iniziale alla spedizione finale.',
         contribution:
-          'Ho contribuito alla delivery frontend lungo un workflow completo, traducendo passaggi operativi in interfacce web utilizzabili.',
+          'Ho contribuito alla delivery di prodotto lungo un workflow completo, traducendo passaggi operativi in interfacce web utilizzabili e comportamento applicativo integrato.',
         outcome:
           'Flusso ordine più chiaro, struttura di prodotto più solida e supporto a un processo multi-step esigente.',
       },
@@ -337,18 +340,18 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
     ],
     skillsTitle: 'Strumenti e punti di forza',
     skillsSummary:
-      'Lo stack è centrato sulla delivery frontend moderna, con capacità API Rails per team che cercano continuità tra prodotto, interfaccia e backend.',
+      'Lo stack è orientato alla delivery full-stack di prodotto, con un forte taglio frontend e capacità backend per seguire il flusso end to end.',
     skillGroups: [
       {
         title: 'Frontend',
         skills: ['Angular', 'Vue', 'TypeScript', 'RxJS', 'Three.js', 'TailwindCSS'],
       },
       {
-        title: 'Backend e API',
+        title: 'Backend',
         skills: ['Ruby on Rails', 'API Rails', 'GraphQL', 'REST', 'Data modeling'],
       },
       {
-        title: 'Delivery',
+        title: 'Delivery di prodotto',
         skills: [
           'Git',
           'Metodologie Agile',
@@ -365,7 +368,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
         title: 'Software Engineer presso Moku',
         meta: 'Giugno 2022 a oggi',
         description:
-          'Delivery frontend, API Rails e full-stack su piattaforme workflow, strumenti gestionali ed esperienze web interattive.',
+          'Delivery full-stack su piattaforme workflow, strumenti gestionali, API Rails ed esperienze web interattive.',
       },
       {
         title: 'Università di Padova',
@@ -383,10 +386,10 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       emailLabel: 'Email',
       typeLabel: 'Tipo di progetto',
       typeOptions: [
-        'Prodotto Angular',
-        'Prodotto Vue',
-        'API Rails / prodotto full-stack',
-        'Recupero frontend',
+        'Prodotto full-stack',
+        'API Rails',
+        'Frontend Angular/Vue',
+        'Recupero prodotto',
         'UI basata su API',
         'UI web 3D',
       ],
@@ -397,7 +400,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       linkedinLabel: 'LinkedIn',
     },
     footer: {
-      summary: 'Sviluppo frontend e API Rails per team che hanno bisogno di delivery concreta.',
+      summary: 'Sviluppo prodotto full-stack per team che hanno bisogno di delivery concreta.',
       location: 'Sacile, Pordenone, Italia',
     },
   },

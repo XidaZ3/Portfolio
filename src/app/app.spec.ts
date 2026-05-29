@@ -20,7 +20,7 @@ describe('App', () => {
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'I build practical web products from interface to API',
+      'I build practical web products from UI to Rails API',
     );
   });
 
@@ -35,7 +35,7 @@ describe('App', () => {
 
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Realizzo prodotti web pratici dall’interfaccia all’API',
+      'Realizzo prodotti web pratici dalla UI all’API Rails',
     );
   });
 });

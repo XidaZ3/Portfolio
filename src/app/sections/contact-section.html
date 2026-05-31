@@ -5,7 +5,7 @@
     <p>{{ content().summary }}</p>
   </div>
 
-  <form class="contact-form">
+  <form class="contact-form" (ngSubmit)="submitForm()">
     <label>
       <span>{{ content().nameLabel }}</span>
       <input
@@ -14,6 +14,8 @@
         (ngModelChange)="name.set($event)"
         name="name"
         autocomplete="name"
+        required
+        [disabled]="submissionState() === 'sending'"
       />
     </label>
 
@@ -25,6 +27,8 @@
         (ngModelChange)="email.set($event)"
         name="email"
         autocomplete="email"
+        required
+        [disabled]="submissionState() === 'sending'"
       />
     </label>
 
@@ -34,6 +38,7 @@
         [ngModel]="projectType()"
         (ngModelChange)="projectType.set($event)"
         name="projectType"
+        [disabled]="submissionState() === 'sending'"
       >
         <option value=""></option>
         @for (option of content().typeOptions; track $index) {
@@ -49,10 +54,22 @@
         [ngModel]="message()"
         (ngModelChange)="message.set($event)"
         name="message"
+        required
+        [disabled]="submissionState() === 'sending'"
       ></textarea>
     </label>
 
-    <a class="button button--primary" [href]="mailtoHref()">{{ content().submitLabel }}</a>
+    <button class="button button--primary" type="submit" [disabled]="submissionState() === 'sending'">
+      {{ submissionState() === 'sending' ? content().sendingLabel : content().submitLabel }}
+    </button>
+
+    @if (submissionState() === 'sent') {
+      <p class="contact-form__status contact-form__status--success">{{ content().sentLabel }}</p>
+    }
+
+    @if (submissionState() === 'error') {
+      <p class="contact-form__status contact-form__status--error">{{ content().errorLabel }}</p>
+    }
   </form>
 
   <div class="contact__fallback">

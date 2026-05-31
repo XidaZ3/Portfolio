@@ -1,6 +1,10 @@
-import { Component, computed, input, signal } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ContactContent, contactEmail, linkedInUrl } from '../content/portfolio-content';
+
+const formspreeEndpoint = 'https://formspree.io/f/xbdbeqvq';
+
+type SubmissionState = 'idle' | 'sending' | 'sent' | 'error';
 
 @Component({
   selector: 'app-contact-section',
@@ -17,17 +21,39 @@ export class ContactSection {
   readonly email = signal('');
   readonly projectType = signal('');
   readonly message = signal('');
+  readonly submissionState = signal<SubmissionState>('idle');
 
-  readonly mailtoHref = computed(() => {
+  async submitForm(): Promise<void> {
     const content = this.content();
-    const body = [
-      `${content.nameLabel}: ${this.name() || '-'}`,
-      `${content.emailLabel}: ${this.email() || '-'}`,
-      `${content.typeLabel}: ${this.projectType() || '-'}`,
-      '',
-      this.message() || '-',
-    ].join('\n');
+    this.submissionState.set('sending');
 
-    return `mailto:${contactEmail}?subject=${encodeURIComponent(content.mailSubject)}&body=${encodeURIComponent(body)}`;
-  });
+    try {
+      const response = await fetch(formspreeEndpoint, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: this.name(),
+          email: this.email(),
+          projectType: this.projectType(),
+          message: this.message(),
+          _subject: content.mailSubject,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Formspree submission failed');
+      }
+
+      this.name.set('');
+      this.email.set('');
+      this.projectType.set('');
+      this.message.set('');
+      this.submissionState.set('sent');
+    } catch {
+      this.submissionState.set('error');
+    }
+  }
 }

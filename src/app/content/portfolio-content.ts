@@ -65,6 +65,9 @@ export interface ContactContent {
   typeOptions: string[];
   messageLabel: string;
   submitLabel: string;
+  sendingLabel: string;
+  sentLabel: string;
+  errorLabel: string;
   mailSubject: string;
   fallbackLabel: string;
   linkedinLabel: string;
@@ -277,7 +280,10 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
         '3D web UI',
       ],
       messageLabel: 'Project details',
-      submitLabel: 'Prepare email',
+      submitLabel: 'Send message',
+      sendingLabel: 'Sending...',
+      sentLabel: 'Message sent. I will reply soon.',
+      errorLabel: 'Something went wrong. Please email me directly.',
       mailSubject: 'Project inquiry for Xida Chen',
       fallbackLabel: 'Or email directly',
       linkedinLabel: 'LinkedIn',
@@ -462,7 +468,10 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
         'UI web 3D',
       ],
       messageLabel: 'Dettagli progetto',
-      submitLabel: 'Prepara email',
+      submitLabel: 'Invia messaggio',
+      sendingLabel: 'Invio in corso...',
+      sentLabel: 'Messaggio inviato. Ti risponderò presto.',
+      errorLabel: 'Qualcosa non ha funzionato. Scrivimi direttamente via email.',
       mailSubject: 'Richiesta progetto per Xida Chen',
       fallbackLabel: 'Oppure scrivi direttamente',
       linkedinLabel: 'LinkedIn',

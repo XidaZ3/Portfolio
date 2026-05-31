@@ -65,6 +65,30 @@ textarea {
   margin-top: 0.35rem;
 }
 
+.contact-form .button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.62;
+}
+
+.contact-form__status {
+  margin: 0;
+  color: rgb(255 255 255 / 0.78);
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.contact-form__status--success {
+  color: #99f6e4;
+}
+
+.contact-form__status--error {
+  color: #fecaca;
+}
+
 .contact__fallback {
   grid-column: 1 / -1;
   display: flex;

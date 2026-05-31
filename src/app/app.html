@@ -20,15 +20,19 @@
 <div class="site-shell">
   <main>
     <app-hero-section [content]="content().hero" />
-    <app-services-section
-      [title]="content().servicesTitle"
-      [summary]="content().servicesSummary"
-      [services]="content().services"
+    <app-professional-snapshot-section
+      [title]="content().snapshotTitle"
+      [items]="content().snapshotItems"
     />
     <app-case-studies-section
       [title]="content().casesTitle"
       [summary]="content().casesSummary"
       [cases]="content().cases"
+    />
+    <app-services-section
+      [title]="content().servicesTitle"
+      [summary]="content().servicesSummary"
+      [services]="content().services"
     />
     <app-skills-section
       [title]="content().skillsTitle"

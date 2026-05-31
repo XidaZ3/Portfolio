@@ -4,6 +4,7 @@ import { CaseStudiesSection } from './sections/case-studies-section';
 import { ContactSection } from './sections/contact-section';
 import { CredentialsSection } from './sections/credentials-section';
 import { HeroSection } from './sections/hero-section';
+import { ProfessionalSnapshotSection } from './sections/professional-snapshot-section';
 import { ServicesSection } from './sections/services-section';
 import { SiteFooter } from './sections/site-footer';
 import { SkillsSection } from './sections/skills-section';
@@ -12,6 +13,7 @@ import { SkillsSection } from './sections/skills-section';
   selector: 'app-root',
   imports: [
     HeroSection,
+    ProfessionalSnapshotSection,
     ServicesSection,
     CaseStudiesSection,
     SkillsSection,

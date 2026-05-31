@@ -38,23 +38,6 @@ h1 {
   margin-top: 1.85rem;
 }
 
-.hero__fit {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  margin-top: 1.25rem;
-}
-
-.hero__fit span {
-  padding: 0.46rem 0.7rem;
-  border: 1px solid rgb(15 118 110 / 0.2);
-  border-radius: 999px;
-  background: rgb(255 255 255 / 0.74);
-  color: var(--color-accent-strong);
-  font-size: 0.88rem;
-  font-weight: 800;
-}
-
 .hero__media {
   display: grid;
   gap: 0.85rem;

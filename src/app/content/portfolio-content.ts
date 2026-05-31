@@ -26,7 +26,6 @@ export interface HeroContent {
   title: string;
   summary: string;
   profileFacts: ProfileFact[];
-  bestFit: string[];
   primaryCta: string;
   secondaryCta: CtaLink;
 }
@@ -84,17 +83,25 @@ export interface PortfolioContent {
   alternateLanguageName: string;
   nav: NavItem[];
   hero: HeroContent;
+  snapshotEyebrow: string;
   snapshotTitle: string;
   snapshotItems: SnapshotItem[];
+  servicesEyebrow: string;
   servicesTitle: string;
   servicesSummary: string;
   services: ServiceItem[];
+  casesEyebrow: string;
   casesTitle: string;
   casesSummary: string;
+  caseContextLabel: string;
+  caseContributionLabel: string;
+  caseValueLabel: string;
   cases: CaseStudy[];
+  skillsEyebrow: string;
   skillsTitle: string;
   skillsSummary: string;
   skillGroups: SkillGroup[];
+  credentialsEyebrow: string;
   credentialsTitle: string;
   credentials: CredentialItem[];
   contact: ContactContent;
@@ -127,13 +134,13 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
         { label: 'Based in', value: 'Sacile, Italy · remote-friendly' },
         { label: 'Languages', value: 'Italian native · professional English' },
       ],
-      bestFit: ['Agencies', 'Product teams', 'Internal tools', 'Workflow platforms'],
       primaryCta: 'Contact me',
       secondaryCta: {
         label: 'Download CV',
         href: englishCvUrl,
       },
     },
+    snapshotEyebrow: 'Profile',
     snapshotTitle: 'Professional snapshot',
     snapshotItems: [
       {
@@ -161,6 +168,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
           'Bachelor degree in Computer Science, top 3% of graduating class, Mille e una lode scholarship.',
       },
     ],
+    servicesEyebrow: 'Services',
     servicesTitle: 'How I can help',
     servicesSummary:
       'I am useful when a team needs someone who can understand the product, work in the codebase, and ship clear web interfaces connected to real data.',
@@ -191,9 +199,13 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
           'I can help simplify existing code, improve UI consistency, and make product areas easier to change.',
       },
     ],
+    casesEyebrow: 'Selected work',
     casesTitle: 'Selected work',
     casesSummary:
       'A few anonymized examples from recent engineering work.',
+    caseContextLabel: 'Context',
+    caseContributionLabel: 'Contribution',
+    caseValueLabel: 'Value',
     cases: [
       {
         label: 'Order workflow',
@@ -226,6 +238,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
           'The product could be explored more directly online, with a visual interface instead of a static presentation.',
       },
     ],
+    skillsEyebrow: 'Stack',
     skillsTitle: 'Tools and strengths',
     skillsSummary:
       'My stack is strongest on frontend product work, with enough backend experience to follow a feature through the API layer.',
@@ -250,6 +263,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
         ],
       },
     ],
+    credentialsEyebrow: 'Credentials',
     credentialsTitle: 'Credentials',
     credentials: [
       {
@@ -305,7 +319,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       { label: 'Contatti', href: '#contact' },
     ],
     hero: {
-      eyebrow: 'Full-stack product engineer',
+      eyebrow: 'Sviluppatore full-stack di prodotto',
       title: 'Sviluppo prodotti web con Angular, Vue e Rails.',
       summary:
         'Mi occupo soprattutto di schermate di prodotto, API e dettagli che rendono una web app chiara e affidabile. Lavoro principalmente con Angular e Vue sul frontend, e con API Rails sul backend.',
@@ -315,13 +329,13 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
         { label: 'Base', value: 'Sacile, Italia · disponibile da remoto' },
         { label: 'Lingue', value: 'Italiano madrelingua · inglese professionale' },
       ],
-      bestFit: ['Agenzie', 'Team prodotto', 'Strumenti interni', 'Piattaforme workflow'],
       primaryCta: 'Contattami',
       secondaryCta: {
         label: 'Scarica CV',
         href: italianCvUrl,
       },
     },
+    snapshotEyebrow: 'Profilo',
     snapshotTitle: 'Profilo professionale',
     snapshotItems: [
       {
@@ -349,6 +363,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
           'Laurea triennale in Informatica, top 3% della classe di laureati, borsa Mille e una lode.',
       },
     ],
+    servicesEyebrow: 'Servizi',
     servicesTitle: 'Come posso aiutare',
     servicesSummary:
       'Sono utile quando un team ha bisogno di qualcuno che capisca il prodotto, lavori nella codebase e sviluppi interfacce web collegate a dati reali.',
@@ -379,9 +394,12 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
           'Posso aiutare a semplificare codice esistente, migliorare la coerenza UI e rendere alcune aree più facili da modificare.',
       },
     ],
-    casesTitle: 'Esperienze selezionate',
-    casesSummary:
-      'Alcuni esempi anonimizzati da esperienze recenti di engineering.',
+    casesEyebrow: 'Progetti',
+    casesTitle: 'Progetti',
+    casesSummary: '',
+    caseContextLabel: 'Contesto',
+    caseContributionLabel: 'Contributo',
+    caseValueLabel: 'Valore',
     cases: [
       {
         label: 'Flusso ordine',
@@ -414,6 +432,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
           'Il prodotto poteva essere esplorato online in modo più diretto, con un’interfaccia visuale invece di una presentazione statica.',
       },
     ],
+    skillsEyebrow: 'Competenze',
     skillsTitle: 'Strumenti e punti di forza',
     skillsSummary:
       'Il mio stack è più forte sul frontend di prodotto, con esperienza backend sufficiente per seguire una feature fino al livello API.',
@@ -438,6 +457,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
         ],
       },
     ],
+    credentialsEyebrow: 'Formazione e lavoro',
     credentialsTitle: 'Credenziali',
     credentials: [
       {

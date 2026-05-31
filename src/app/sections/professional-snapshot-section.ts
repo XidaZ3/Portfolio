@@ -8,6 +8,7 @@ import { SnapshotItem } from '../content/portfolio-content';
   styleUrl: './professional-snapshot-section.scss',
 })
 export class ProfessionalSnapshotSection {
+  readonly eyebrow = input.required<string>();
   readonly title = input.required<string>();
   readonly items = input.required<SnapshotItem[]>();
 }

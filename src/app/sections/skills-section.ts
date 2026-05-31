@@ -8,6 +8,7 @@ import { SkillGroup } from '../content/portfolio-content';
   styleUrl: './skills-section.scss',
 })
 export class SkillsSection {
+  readonly eyebrow = input.required<string>();
   readonly title = input.required<string>();
   readonly summary = input.required<string>();
   readonly groups = input.required<SkillGroup[]>();

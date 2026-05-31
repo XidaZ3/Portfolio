@@ -2,7 +2,7 @@
   <div class="site-header__inner">
     <a class="brand" href="#top" aria-label="Xida Chen home">
       <span>Xida Chen</span>
-      <small>Full-Stack Product Engineer</small>
+      <small>{{ content().hero.eyebrow }}</small>
     </a>
 
     <nav aria-label="Primary navigation">
@@ -21,25 +21,33 @@
   <main>
     <app-hero-section [content]="content().hero" />
     <app-professional-snapshot-section
+      [eyebrow]="content().snapshotEyebrow"
       [title]="content().snapshotTitle"
       [items]="content().snapshotItems"
     />
     <app-case-studies-section
+      [eyebrow]="content().casesEyebrow"
       [title]="content().casesTitle"
       [summary]="content().casesSummary"
+      [contextLabel]="content().caseContextLabel"
+      [contributionLabel]="content().caseContributionLabel"
+      [valueLabel]="content().caseValueLabel"
       [cases]="content().cases"
     />
     <app-services-section
+      [eyebrow]="content().servicesEyebrow"
       [title]="content().servicesTitle"
       [summary]="content().servicesSummary"
       [services]="content().services"
     />
     <app-skills-section
+      [eyebrow]="content().skillsEyebrow"
       [title]="content().skillsTitle"
       [summary]="content().skillsSummary"
       [groups]="content().skillGroups"
     />
     <app-credentials-section
+      [eyebrow]="content().credentialsEyebrow"
       [title]="content().credentialsTitle"
       [credentials]="content().credentials"
     />

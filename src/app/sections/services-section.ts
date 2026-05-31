@@ -8,6 +8,7 @@ import { ServiceItem } from '../content/portfolio-content';
   styleUrl: './services-section.scss',
 })
 export class ServicesSection {
+  readonly eyebrow = input.required<string>();
   readonly title = input.required<string>();
   readonly summary = input.required<string>();
   readonly services = input.required<ServiceItem[]>();

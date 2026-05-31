@@ -8,6 +8,7 @@ import { CredentialItem } from '../content/portfolio-content';
   styleUrl: './credentials-section.scss',
 })
 export class CredentialsSection {
+  readonly eyebrow = input.required<string>();
   readonly title = input.required<string>();
   readonly credentials = input.required<CredentialItem[]>();
 }

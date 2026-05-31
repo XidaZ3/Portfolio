@@ -234,7 +234,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
         skills: ['Ruby on Rails', 'Rails APIs', 'GraphQL', 'REST', 'Data modeling'],
       },
       {
-        title: 'Product delivery',
+        title: 'Product work',
         skills: [
           'Git',
           'Agile methodologies',
@@ -419,7 +419,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
         skills: ['Ruby on Rails', 'API Rails', 'GraphQL', 'REST', 'Data modeling'],
       },
       {
-        title: 'Delivery di prodotto',
+        title: 'Lavoro di prodotto',
         skills: [
           'Git',
           'Metodologie Agile',

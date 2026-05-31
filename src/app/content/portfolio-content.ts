@@ -10,11 +10,22 @@ export interface CtaLink {
   href: string;
 }
 
+export interface ProfileFact {
+  label: string;
+  value: string;
+}
+
+export interface SnapshotItem {
+  label: string;
+  value: string;
+  description: string;
+}
+
 export interface HeroContent {
   eyebrow: string;
   title: string;
   summary: string;
-  proof: string[];
+  profileFacts: ProfileFact[];
   bestFit: string[];
   primaryCta: string;
   secondaryCta: CtaLink;
@@ -69,6 +80,8 @@ export interface PortfolioContent {
   alternateLanguageName: string;
   nav: NavItem[];
   hero: HeroContent;
+  snapshotTitle: string;
+  snapshotItems: SnapshotItem[];
   servicesTitle: string;
   servicesSummary: string;
   services: ServiceItem[];
@@ -99,26 +112,53 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       { label: 'Contact', href: '#contact' },
     ],
     hero: {
-      eyebrow: 'Full-stack web products',
-      title: 'I build practical web products from UI to Rails API.',
+      eyebrow: 'Full-stack product engineer',
+      title: 'I build reliable web products across Angular, Vue, and Rails.',
       summary:
-        'I help product teams ship Angular and Vue interfaces with Rails APIs behind them, especially for workflow-heavy products that need clear UX and reliable backend delivery.',
-      proof: [
-        'Full-stack product delivery',
-        'Ruby on Rails APIs',
-        'Angular, Vue, TypeScript',
-        'Workflow-heavy products',
+        'I work with agencies, product teams, and hiring teams that need a practical engineer for workflow-heavy web products, frontend delivery, and Rails-backed APIs.',
+      profileFacts: [
+        { label: 'Current role', value: 'Software Engineer at Moku' },
+        { label: 'Focus', value: 'Angular, Vue, TypeScript, Rails APIs' },
+        { label: 'Location', value: 'Sacile, Italy · remote-friendly' },
+        { label: 'Languages', value: 'Italian native · professional English' },
       ],
-      bestFit: ['SaaS dashboards', 'Internal tools', 'Workflow platforms', 'API-backed web apps'],
-      primaryCta: 'Start a project inquiry',
+      bestFit: ['Agencies', 'Product teams', 'Internal tools', 'Workflow platforms'],
+      primaryCta: 'Contact me',
       secondaryCta: {
         label: 'Download CV',
         href: italianCvUrl,
       },
     },
-    servicesTitle: 'Development services',
+    snapshotTitle: 'Professional snapshot',
+    snapshotItems: [
+      {
+        label: 'Current work',
+        value: 'Software Engineer at Moku',
+        description:
+          'Full-stack product delivery across workflow platforms, management tools, and Rails-backed web applications.',
+      },
+      {
+        label: 'Delivery focus',
+        value: 'Frontend strength with backend ownership',
+        description:
+          'Angular and Vue interfaces, API integration, Rails endpoints, data flow, and release-ready implementation.',
+      },
+      {
+        label: 'Core stack',
+        value: 'Angular · Vue · TypeScript · Rails',
+        description:
+          'Practical web product work with GraphQL, REST, RxJS, Three.js, and maintainable UI systems.',
+      },
+      {
+        label: 'Education',
+        value: 'Computer Science, University of Padova',
+        description:
+          'Bachelor degree in Computer Science, top 3% of graduating class, Mille e una lode scholarship.',
+      },
+    ],
+    servicesTitle: 'How I can support a team',
     servicesSummary:
-      'Focused support for teams that need full-stack delivery, Rails API capability, product clarity, and maintainable web applications.',
+      'Focused engineering support for agencies, product teams, and hiring managers who need dependable delivery inside an existing product context.',
     services: [
       {
         title: 'Full-stack product development',
@@ -224,7 +264,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       eyebrow: 'Project inquiry',
       title: 'Tell me what you need to build.',
       summary:
-        'Share the product, timeline, and where you need support. I will reply with practical next steps.',
+        'Share the project, role, team context, or timeline. I will reply with practical next steps for a collaboration or career conversation.',
       nameLabel: 'Name',
       emailLabel: 'Email',
       typeLabel: 'Project type',
@@ -257,26 +297,53 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       { label: 'Contatti', href: '#contact' },
     ],
     hero: {
-      eyebrow: 'Prodotti web full-stack',
-      title: 'Realizzo prodotti web pratici dalla UI all’API Rails.',
+      eyebrow: 'Full-stack product engineer',
+      title: 'Realizzo prodotti web affidabili con Angular, Vue e Rails.',
       summary:
-        'Aiuto team di prodotto a consegnare interfacce Angular e Vue con API Rails solide, soprattutto quando il prodotto ha workflow complessi e deve funzionare bene end to end.',
-      proof: [
-        'Delivery full-stack di prodotto',
-        'API Ruby on Rails',
-        'Angular, Vue, TypeScript',
-        'Prodotti con workflow complessi',
+        'Collaboro con agenzie, team di prodotto e hiring manager che cercano un engineer pratico per prodotti web con workflow complessi, delivery frontend e API Rails.',
+      profileFacts: [
+        { label: 'Ruolo attuale', value: 'Software Engineer presso Moku' },
+        { label: 'Focus', value: 'Angular, Vue, TypeScript, API Rails' },
+        { label: 'Posizione', value: 'Sacile, Italia · disponibile da remoto' },
+        { label: 'Lingue', value: 'Italiano madrelingua · inglese professionale' },
       ],
-      bestFit: ['Dashboard SaaS', 'Strumenti interni', 'Piattaforme workflow', 'Web app con API'],
-      primaryCta: 'Avvia una richiesta',
+      bestFit: ['Agenzie', 'Team prodotto', 'Strumenti interni', 'Piattaforme workflow'],
+      primaryCta: 'Contattami',
       secondaryCta: {
         label: 'Scarica CV',
         href: italianCvUrl,
       },
     },
-    servicesTitle: 'Servizi di sviluppo',
+    snapshotTitle: 'Profilo professionale',
+    snapshotItems: [
+      {
+        label: 'Esperienza attuale',
+        value: 'Software Engineer presso Moku',
+        description:
+          'Delivery full-stack su piattaforme workflow, strumenti gestionali e applicazioni web con backend Rails.',
+      },
+      {
+        label: 'Focus delivery',
+        value: 'Frontend forte con ownership backend',
+        description:
+          'Interfacce Angular e Vue, integrazione API, endpoint Rails, flussi dati e implementazione pronta al rilascio.',
+      },
+      {
+        label: 'Stack principale',
+        value: 'Angular · Vue · TypeScript · Rails',
+        description:
+          'Sviluppo prodotto web con GraphQL, REST, RxJS, Three.js e sistemi UI mantenibili.',
+      },
+      {
+        label: 'Formazione',
+        value: 'Informatica, Università di Padova',
+        description:
+          'Laurea triennale in Informatica, top 3% della classe di laureati, borsa Mille e una lode.',
+      },
+    ],
+    servicesTitle: 'Come posso supportare un team',
     servicesSummary:
-      'Supporto mirato per team che hanno bisogno di delivery full-stack, API Rails, chiarezza di prodotto e applicazioni web mantenibili.',
+      'Supporto engineering mirato per agenzie, team di prodotto e hiring manager che cercano delivery affidabile dentro un contesto prodotto esistente.',
     services: [
       {
         title: 'Sviluppo prodotto full-stack',
@@ -381,7 +448,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       eyebrow: 'Richiesta progetto',
       title: 'Raccontami cosa devi costruire.',
       summary:
-        'Condividi prodotto, tempistiche e tipo di supporto richiesto. Da lì capiamo insieme come procedere.',
+        'Condividi progetto, ruolo, contesto del team o tempistiche. Rispondo con prossimi passi pratici per una collaborazione o una conversazione professionale.',
       nameLabel: 'Nome',
       emailLabel: 'Email',
       typeLabel: 'Tipo di progetto',

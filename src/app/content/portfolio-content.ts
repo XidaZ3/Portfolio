@@ -61,6 +61,7 @@ export interface ContactContent {
   summary: string;
   nameLabel: string;
   emailLabel: string;
+  phoneLabel: string;
   typeLabel: string;
   typeOptions: string[];
   messageLabel: string;
@@ -270,13 +271,13 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
         'Send a short note about the project, role, team, or timeline. I will reply with the next practical step.',
       nameLabel: 'Name',
       emailLabel: 'Email',
+      phoneLabel: 'Phone',
       typeLabel: 'Project type',
       typeOptions: [
         'Full-stack product',
         'Rails API',
         'Angular/Vue frontend',
         'Codebase cleanup',
-        'API-driven UI',
         '3D web UI',
       ],
       messageLabel: 'Project details',
@@ -458,13 +459,13 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
         'Mandami una nota breve su progetto, ruolo, team o tempistiche. Risponderò con il prossimo passo pratico.',
       nameLabel: 'Nome',
       emailLabel: 'Email',
+      phoneLabel: 'Telefono',
       typeLabel: 'Tipo di progetto',
       typeOptions: [
         'Prodotto full-stack',
         'API Rails',
         'Frontend Angular/Vue',
         'Pulizia codebase',
-        'UI basata su API',
         'UI web 3D',
       ],
       messageLabel: 'Dettagli progetto',

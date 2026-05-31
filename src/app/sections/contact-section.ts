@@ -19,11 +19,16 @@ export class ContactSection {
 
   readonly name = signal('');
   readonly email = signal('');
+  readonly phone = signal('');
   readonly projectType = signal('');
   readonly message = signal('');
   readonly submissionState = signal<SubmissionState>('idle');
 
   async submitForm(): Promise<void> {
+    if (!this.isFormReady()) {
+      return;
+    }
+
     const content = this.content();
     this.submissionState.set('sending');
 
@@ -37,6 +42,7 @@ export class ContactSection {
         body: JSON.stringify({
           name: this.name(),
           email: this.email(),
+          phone: this.phone(),
           projectType: this.projectType(),
           message: this.message(),
           _subject: content.mailSubject,
@@ -49,11 +55,22 @@ export class ContactSection {
 
       this.name.set('');
       this.email.set('');
+      this.phone.set('');
       this.projectType.set('');
       this.message.set('');
       this.submissionState.set('sent');
     } catch {
       this.submissionState.set('error');
     }
+  }
+
+  isFormReady(): boolean {
+    return Boolean(
+      this.name().trim() &&
+        this.email().trim() &&
+        this.phone().trim() &&
+        this.projectType() &&
+        this.message().trim(),
+    );
   }
 }

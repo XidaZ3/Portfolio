@@ -5,7 +5,7 @@
     <p>{{ content().summary }}</p>
   </div>
 
-  <form class="contact-form" (ngSubmit)="submitForm()">
+  <form class="contact-form" #contactForm="ngForm" (ngSubmit)="submitForm()">
     <label>
       <span>{{ content().nameLabel }}</span>
       <input
@@ -33,11 +33,25 @@
     </label>
 
     <label>
+      <span>{{ content().phoneLabel }}</span>
+      <input
+        type="tel"
+        [ngModel]="phone()"
+        (ngModelChange)="phone.set($event)"
+        name="phone"
+        autocomplete="tel"
+        required
+        [disabled]="submissionState() === 'sending'"
+      />
+    </label>
+
+    <label>
       <span>{{ content().typeLabel }}</span>
       <select
         [ngModel]="projectType()"
         (ngModelChange)="projectType.set($event)"
         name="projectType"
+        required
         [disabled]="submissionState() === 'sending'"
       >
         <option value=""></option>
@@ -59,7 +73,11 @@
       ></textarea>
     </label>
 
-    <button class="button button--primary" type="submit" [disabled]="submissionState() === 'sending'">
+    <button
+      class="button button--primary"
+      type="submit"
+      [disabled]="submissionState() === 'sending' || contactForm.invalid || !isFormReady()"
+    >
       {{ submissionState() === 'sending' ? content().sendingLabel : content().submitLabel }}
     </button>
 

@@ -103,7 +103,8 @@ export interface PortfolioContent {
 
 export const contactEmail = 'xidachen3@gmail.com';
 export const linkedInUrl = 'https://www.linkedin.com/in/xida-chen-4797911a2/';
-export const italianCvUrl = '/xida-chen-cv-it.pdf';
+export const englishCvUrl = '/Xida Chen - Frontend Resume - ENG.pdf';
+export const italianCvUrl = '/Xida Chen - Frontend Resume - ITA.pdf';
 
 export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
   en: {
@@ -130,7 +131,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       primaryCta: 'Contact me',
       secondaryCta: {
         label: 'Download CV',
-        href: italianCvUrl,
+        href: englishCvUrl,
       },
     },
     snapshotTitle: 'Professional snapshot',

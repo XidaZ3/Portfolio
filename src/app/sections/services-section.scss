@@ -23,9 +23,9 @@
 
 .service-card--featured {
   grid-column: span 3;
-  min-height: 260px;
-  padding: clamp(1.25rem, 2vw, 1.75rem);
-  background: linear-gradient(135deg, rgb(15 118 110 / 0.1), var(--color-surface) 52%);
+  min-height: 240px;
+  padding: clamp(1.25rem, 2vw, 1.65rem);
+  background: linear-gradient(135deg, rgb(15 118 110 / 0.075), var(--color-surface) 56%);
 }
 
 .service-card:hover {

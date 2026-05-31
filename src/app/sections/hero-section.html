@@ -11,7 +11,7 @@
       </a>
     </div>
 
-    <div class="hero__fit" aria-label="Best fit project types">
+    <div class="hero__fit" aria-label="Best fit work contexts">
       @for (item of content().bestFit; track $index) {
         <span>{{ item }}</span>
       }
@@ -21,10 +21,12 @@
   <aside class="hero__media" aria-label="Profile highlights">
     <img src="/xida-chen-photo.jpeg" alt="Xida Chen" />
 
-    <div class="hero__proof">
-      <p>What I can cover</p>
-      @for (item of content().proof; track $index) {
-        <span>{{ item }}</span>
+    <div class="hero__profile">
+      @for (fact of content().profileFacts; track fact.label) {
+        <div>
+          <span>{{ fact.label }}</span>
+          <strong>{{ fact.value }}</strong>
+        </div>
       }
     </div>
   </aside>

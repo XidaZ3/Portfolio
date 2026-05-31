@@ -21,11 +21,12 @@ describe('App', () => {
 
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'I build reliable web products across Angular, Vue, and Rails',
+      'I build web products with Angular, Vue, and Rails',
     );
     expect(compiled.textContent).toContain('Software Engineer at Moku');
     expect(compiled.textContent).toContain('Computer Science, University of Padova');
-    expect(compiled.textContent).toContain('How I can support a team');
+    expect(compiled.textContent).toContain('How I can help');
+    expect(compiled.textContent).toContain('I can build product screens');
   });
 
   it('should render credibility before services', async () => {
@@ -56,9 +57,10 @@ describe('App', () => {
 
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Realizzo prodotti web affidabili con Angular, Vue e Rails',
+      'Sviluppo prodotti web con Angular, Vue e Rails',
     );
     expect(compiled.textContent).toContain('Software Engineer presso Moku');
-    expect(compiled.textContent).toContain('Come posso supportare un team');
+    expect(compiled.textContent).toContain('Come posso aiutare');
+    expect(compiled.textContent).toContain('Posso sviluppare schermate di prodotto');
   });
 });

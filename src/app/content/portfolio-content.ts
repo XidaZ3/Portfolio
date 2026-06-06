@@ -131,7 +131,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       profileFacts: [
         { label: 'Current role', value: 'Software Engineer at Moku' },
         { label: 'Main stack', value: 'Angular, Vue, TypeScript, Rails' },
-        { label: 'Based in', value: 'Sacile, Italy · remote-friendly' },
+        { label: 'Based in', value: 'Northern Italy · remote across Europe' },
         { label: 'Languages', value: 'Italian native · professional English' },
       ],
       primaryCta: 'Contact me',
@@ -326,7 +326,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
       profileFacts: [
         { label: 'Ruolo attuale', value: 'Software Engineer presso Moku' },
         { label: 'Stack principale', value: 'Angular, Vue, TypeScript, Rails' },
-        { label: 'Base', value: 'Sacile, Italia · disponibile da remoto' },
+        { label: 'Base', value: 'Nord Italia · remoto in Italia ed Europa' },
         { label: 'Lingue', value: 'Italiano madrelingua · inglese professionale' },
       ],
       primaryCta: 'Contattami',

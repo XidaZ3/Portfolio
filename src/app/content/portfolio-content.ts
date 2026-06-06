@@ -306,7 +306,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
     },
     footer: {
       summary: 'Full-stack web product work with Angular, Vue, TypeScript, and Rails.',
-      location: 'Sacile, Pordenone, Italy',
+      location: 'Based near Pordenone, available for remote projects across Italy and Europe.',
     },
   },
   it: {
@@ -500,7 +500,7 @@ export const portfolioContent: Record<LanguageCode, PortfolioContent> = {
     },
     footer: {
       summary: 'Sviluppo prodotti web full-stack con Angular, Vue, TypeScript e Rails.',
-      location: 'Sacile, Pordenone, Italia',
+      location: 'Vicino a Pordenone, lavoro da remoto con clienti in Italia e in Europa.',
     },
   },
 };
